@@ -4,47 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>codebee.store</title>
-
+  
   <!-- Favicon -->
   <link rel="icon" href="TransparentLogoSmall.ico">
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Font -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-  <!-- Your CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="site.css">
+
+  <!-- JS -->
+  <script src="site.js" defer></script>
 </head>
-
-<body style="font-family: 'Mohave', sans-serif;">
-
-<header class="border-bottom box-shadow p-3">
+<body>
+  <header class="border-bottom box-shadow p-3">
     <div class="container p-0">
         <nav class="navbar navbar-expand-md p-0">
 
+            <!-- Logo + button -->
             <div class="d-flex justify-content-between align-items-center w-100">
+
+                <!-- Logo -->
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/logotyp.png" style="max-height: 50px;">
+                    <img src="images/logotyp.png" alt="Codebee Logo" class="img-fluid" style="max-height: 50px;">
                 </a>
 
-                <button class="navbar-toggler d-md-none"
+                <!-- Menu button (ONLY mobile) -->
+                <button class="navbar-toggler d-md-none navMenuBtn"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarMain">
-                    <img src="icons/dots.png" style="width:24px;">
+                    <img src="icons/dots.png" alt="MenuIcon" style="width:24px;">
                 </button>
             </div>
 
+            <!-- Navbar content -->
             <div class="collapse navbar-collapse justify-content-md-end mt-3 mt-md-0"
                  id="navbarMain">
                 <div class="d-flex flex-column flex-md-row align-items-center gap-3 gap-md-4">
 
-                    <!-- ✅ fixed casing -->
                     <a class="btn navBtn" href="index.html">HOME</a>
-                    <a class="btn navBtn" href="products.html">PRODUCTS</a>
-                    <a class="btn navBtn text-nowrap" href="aboutus.html">ABOUT US</a>
+                    <a class="btn navBtn" href="Products.html">PRODUCTS</a>
+                    <a class="btn navBtn text-nowrap" href="AboutUs.html">ABOUT US</a>
 
                 </div>
             </div>
@@ -52,117 +58,169 @@
     </div>
 </header>
 
-<!-- MAIN CONTENT -->
+
+
 <div class="py-5 w-100 d-flex align-items-center justify-content-center"
-     style="background: url('images/background.png') center/cover no-repeat; min-height: 80vh;">
+     style="background: url('images/background.png') center/cover no-repeat; min-height: 80vh; height: auto;">
 
-    <div class="container hero p-4"
-         style="background-color:#fafafa; border-radius:20px; width:80%; border:2px solid #fff;">
+    <div class="container hero mb-5 mt-5 p-4" style="background-color: #fafafa; border-radius: 20px; width: 80%; border: solid 2px #ffffff;">
+        <!-- Product Timeline -->
+        <div>
+            
+          <!-- Product Timeline -->
+<div class="mb-5 mt-5">
+    <div class="container hero p-4">
 
-        <!-- Release info -->
-        <div class="row text-center mb-4">
-            <p class="progress-title mb-0">
-                Our first product is in production
-            </p>
-            <p class="progress-text">RELEASE DATE : To be announced</p>
-            <p class="progress-text mt-2">
-                Stay tuned - Something exciting is in the works.
-            </p>
-        </div>
+    <!-- Release info -->
+    <div class="row align-items-center justify-content-evenly">
+        <p class="progress-title mb-0">
+            Our first product is in production
+        </p>
+        <p class="progress-text" style="font-size: 1rem;">RELEASE DATE : To be announced</p>
+        <p class="progress-text mt-2" style="font-size: 1.2rem;">
+            Stay tuned - Something exciting is in the works.
+        </p>
+    </div>
 
-        <!-- Timeline -->
-        <div class="timeline-wrapper d-none d-lg-block">
-            <div class="timeline">
 
-                <div class="timeline-step completed">
-                    <div class="icon"><img src="icons/correct.png"></div>
-                    <p class="timeline-Text">START !</p>
-                    <p class="timeline-Text" style="font-size:0.8rem;">25.02.2026</p>
-                </div>
+    <!-- Timeline -->
+    <div class="timeline-wrapper d-none d-lg-block">
+        <div class="timeline">
 
-                <div class="timeline-step current">
-                    <div class="icon"><img src="icons/contrast.png"></div>
-                    <p class="timeline-Text">Planning phase</p>
-                </div>
+            <div class="timeline-step completed">
+                <div class="icon"><img src="icons/correct.png" alt="icon"></div>
+                <p class="timeline-Text">START !</p>
+                <p class="timeline-Text" style="font-size: 0.8rem;">25.02.2026</p>
+            </div>
 
-                <div class="timeline-step">
-                    <div class="icon"><img src="icons/circle.png"></div>
-                    <p class="timeline-Text">Development phase</p>
-                </div>
-
-                <div class="timeline-step">
-                    <div class="icon"><img src="icons/circle.png"></div>
-                    <p class="timeline-Text">Testing phase</p>
-                </div>
-
-                <div class="timeline-step">
-                    <div class="icon"><img src="icons/circle.png"></div>
-                    <p class="timeline-Text">Final touches</p>
-                </div>
-
-                <div class="timeline-step">
-                    <div class="icon"><img src="icons/circle.png"></div>
-                    <p class="timeline-Text">DONE !</p>
-                </div>
+            <div class="timeline-step current">
+                <div class="icon"><img src="icons/contrast.png" alt="icon"></div>
+                <p class="timeline-Text">Planning phase</p>
+                <p class="timeline-Text" style="font-size: 0.8rem;">25.02.2026 - Current </p>
 
             </div>
+
+            <div class="timeline-step">
+                <div class="icon"><img src="icons/circle.png" alt="icon"></div>
+                <p class="timeline-Text">Development phase</p>
+                <p class="timeline-Text" style="font-size: 0.8rem;"> - </p>
+
+            </div>
+
+            <div class="timeline-step">
+                <div class="icon"><img src="icons/circle.png" alt="icon"></div>
+                <p class="timeline-Text">Testing phase</p>
+                <p class="timeline-Text" style="font-size: 0.8rem;"> - </p>
+
+            </div>
+
+            <div class="timeline-step">
+                <div class="icon"><img src="icons/circle.png" alt="icon"></div>
+                <p class="timeline-Text">Final touches</p>
+                <p class="timeline-Text" style="font-size: 0.8rem;"> - </p>
+
+            </div>
+
+            <div class="timeline-step">
+                <div class="icon"><img src="icons/circle.png" alt="icon"></div>
+                <p class="timeline-Text">DONE !</p>
+                <p class="timeline-Text" style="font-size: 0.8rem;"> - </p>
+
+            </div>
+
+
         </div>
+    </div>
+    <!-- Mobile Timeline (UL) -->
+    <ul class="timeline-mobile d-lg-none ">
 
-        <!-- Mobile timeline -->
-        <ul class="timeline-mobile d-lg-none">
-            <li class="completed">
-                <img src="icons/correct.png" class="me-2">
-                <p>START<br>25.02.2026</p>
+        <li class="completed">
+            <img src="icons/correct.png" class="me-2">
+                <p>START !<br />16.02.2026</p>
             </li>
 
-            <li class="current">
-                <img src="icons/contrast.png" class="me-2">
-                <p>Planning phase</p>
-            </li>
+        <li class="current">
+            <img src="icons/contrast.png" class="me-2">
+            <p>Planning phase<br />16.02.2026 - Current</p>
+        </li>
 
-            <li><img src="icons/circle.png" class="me-2"><p>Development</p></li>
-            <li><img src="icons/circle.png" class="me-2"><p>Testing</p></li>
-            <li><img src="icons/circle.png" class="me-2"><p>Final touches</p></li>
-            <li><img src="icons/circle.png" class="me-2"><p>Done</p></li>
-        </ul>
+        <li>
+            <img src="icons/circle.png" class="me-2">
+            <p>Development phase<br />-</p>
+        </li>
+
+        <li>
+            <img src="icons/circle.png" class="me-2">
+            <p>Testing phase<br />-</p>
+        </li>
+
+        <li>
+            <img src="icons/circle.png" class="me-2">
+            <p>Final touches<br />-</p>
+        </li>
+
+        <li>
+            <img src="icons/circle.png" class="me-2">
+            <p>DONE !<br />-</p>
+        </li>
+
+    </ul>
+</div>
+</div>
+        </div>
 
     </div>
 </div>
 
 <!-- FOOTER -->
-<footer class="border-top p-3">
+<footer class="border-top box-shadow p-3">
 
-    <div class="container py-3">
+    <div class="container footerContent py-3">
         <div class="row">
 
-            <div class="col-md-6">
-                <p class="title">ABOUT US</p>
-                <p>CodeBee was founded by a Swedish couple in 2025.</p>
+            <!-- About -->
+            <div class="col-12 col-md-6 col-lg-5 mb-3">
+                <p class="title mb-3">ABOUT US</p>
+                <p class="subtitle mb-1">
+                    CodeBee was founded by a Swedish couple in late 2025.
+                    They first met through their shared passion for gaming,
+                    a hobby they still enjoy together today.
+                </p>
             </div>
 
-            <div class="col-md-3">
+            <!-- Social -->
+            <div class="col-6 col-md-3 col-lg-2 mb-3">
                 <p class="title">FOLLOW US</p>
-                <a href="https://www.instagram.com/codebeeab">
-                    <img src="icons/instagram.png" width="25">
+                <a href="https://www.instagram.com/codebeeab" style="text-decoration: none;">
+                    <img src="icons/instagram.png" alt="Instagram" style="width:25px; margin-right:20px;">
                 </a>
-                <a href="https://www.linkedin.com/company/codebee-ab">
-                    <img src="icons/linkedin.png" width="25">
+                <a href="https://www.linkedin.com/company/codebee-ab" style="text-decoration: none;">
+                    <img src="icons/linkedin.png" alt="LinkedIn" style="width:25px;">
                 </a>
             </div>
 
-            <div class="col-md-3">
-                <p class="title">CONTACT</p>
-                <p>info@codebee.store</p>
+            <!-- Contact -->
+            <div class="col-6 col-md-3 col-lg-3 mb-3">
+                <p class="title">CONTACT US</p>
+                <p style="color: #383C48; font-family: 'Mohave', sans-serif;">info@codebee.store</p>
             </div>
 
         </div>
     </div>
 
+    <div class="container pb-2">
+        <img src="images/TransparentLogoSmall.png" alt="Bee" style="width:40px;">
+    </div>
+
+    <div class="container d-flex align-items-center pb-3">
+        <img src="icons/copyright.png" alt="Copyright" width="12">
+        <p class="mb-0" style="font-size:0.7rem; margin-left: 5px; font-family: 'Mohave', sans-serif;">
+            Codebee AB 2025
+        </p>
+    </div>
+
 </footer>
 
-<!-- ✅ JS LAST -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="site.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

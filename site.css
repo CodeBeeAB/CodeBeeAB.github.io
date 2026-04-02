@@ -6,14 +6,6 @@
     #B87333
 */
 
-@font-face {
-    font-family: 'bebasneue-regular';
-    src: url('fonts/bebasneue-regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'mohave-variablefont_wght';
-    src: url('fonts/mohave-variablefont_wght.ttf') format('truetype');
-}
 
 
 /*GENERAL*/
@@ -125,7 +117,7 @@ body {
 .connectText {
     font-size: 1.1rem;
     color: #f1f1f1;
-    font-family: bebasneue-regular;
+    font-family: 'Bebas Neue', sans-serif;
     margin-bottom: 0; /* important for vertical alignment */
     margin-right: 20px;
 }
@@ -142,7 +134,7 @@ div.gradient {
 }
 .hero-title {
     font-size: 2rem;
-    font-family: bebasneue-regular;
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: 500;
     color: #383C48;
     word-spacing: 5px;
@@ -170,7 +162,7 @@ div.gradient {
 .historyTitle {
     font-size: 2rem;
     font-weight: bold;
-    font-family : bebasneue-regular;
+    font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 2px;
     word-spacing: 5px;
     color: #f1f1f1;
@@ -197,7 +189,7 @@ div.gradient {
 }
 .name{
     font-size: 1.5rem;
-    font-family : bebasneue-regular;
+    font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 2px;
     word-spacing: 5px;
     color: #f1f1f1;
@@ -218,7 +210,7 @@ div.gradient {
 .progress-title {
     font-size: 2rem;
     color: #383C48;
-    font-family: bebasneue-regular;
+    font-family: 'Bebas Neue', sans-serif;
     margin-bottom: 0;
 }
 .progress-text {
@@ -259,7 +251,7 @@ div.gradient {
 .timeline-Text {
     font-size: 1.2rem;
     color: #383C48;
-    font-family: bebasneue-regular;
+    font-family: 'Bebas Neue', sans-serif;
 }
 .timeline-progress {
     position: absolute;
@@ -346,7 +338,7 @@ div.gradient {
 }
 .timeline-mobile li p {
     margin: 0; 
-    font-family: bebasneue-regular;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 1.2rem;
 }
 
