@@ -40,9 +40,6 @@ html {
     position: relative;
     min-height: 100%;
 }
-body {
-      font-family: 'Mohave', sans-serif;
-    }
 footer {
     bottom: 0;
     width: 100%;
