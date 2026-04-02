@@ -4,276 +4,138 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>codebee.store</title>
-  <link rel="icon" type="image/x-icon" href="TransparentLogoSmall.ico">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
- 
-  <link rel="stylesheet" href="site.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="site.js"></script>
-   
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="TransparentLogoSmall.ico">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- ✅ Google Font (FIXED) -->
+  <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="site.css">
 </head>
 
+<body style="font-family: 'Mohave', sans-serif;">
 
-<body>
-  <header class="border-bottom box-shadow p-3">
+<header class="border-bottom box-shadow p-3">
     <div class="container p-0">
         <nav class="navbar navbar-expand-md p-0">
 
-            <!-- Logo + button -->
             <div class="d-flex justify-content-between align-items-center w-100">
-
-                <!-- Logo -->
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/logotyp.png" alt="Codebee Logo" class="img-fluid" style="max-height: 50px;">
+                    <img src="images/logotyp.png" style="max-height: 50px;">
                 </a>
 
-                <!-- Menu button (ONLY mobile) -->
-                <button class="navbar-toggler d-md-none navMenuBtn"
+                <button class="navbar-toggler d-md-none"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarMain">
-                    <img src="icons/dots.png" alt="MenuIcon" style="width:24px;">
+                    <img src="icons/dots.png" style="width:24px;">
                 </button>
             </div>
 
-            <!-- Navbar content -->
             <div class="collapse navbar-collapse justify-content-md-end mt-3 mt-md-0"
                  id="navbarMain">
                 <div class="d-flex flex-column flex-md-row align-items-center gap-3 gap-md-4">
-
                     <a class="btn navBtn" href="index.html">HOME</a>
-                    <a class="btn navBtn" href="Products.html">PRODUCTS</a>
-                    <a class="btn navBtn text-nowrap" href="AboutUs.html">ABOUT US</a>
-
+                    <a class="btn navBtn" href="products.html">PRODUCTS</a>
+                    <a class="btn navBtn text-nowrap" href="aboutus.html">ABOUT US</a>
                 </div>
             </div>
+
         </nav>
     </div>
 </header>
 
-  <div class="container hero mb-3 p-4 mt-3 d-flex align-items-center justify-content-center" style="min-height: 40vh;">
+<!-- CONTENT (unchanged mostly) -->
+<div class="container hero mb-3 p-4 mt-3 d-flex align-items-center justify-content-center" style="min-height: 40vh;">
     <div class="row align-items-center justify-content-evenly">
-        <!-- LEFT CONTENT -->
-        <div class="col-lg-5 col-md-12">
+
+        <div class="col-lg-5">
             <div class="hero-title mb-4">
-                <strong>Announcement</strong> <br /> Our new website is now live! 
+                <strong>Announcement</strong><br>Our new website is now live!
             </div>
-            <p class="hero-text mt-4">
-                Built to showcase and share our work och developments.
+
+            <p class="hero-text mt-4">Built to showcase and share our work och developments.</p>
+            <p class="hero-text">Take a look and follow our journey!</p>
+            <p class="hero-text">Please share feedback to improve the website.</p>
+
+            <p class="hero-text mt-4" style="color:#383C48">
+                <img src="icons/circle-envelope.png" style="width:25px; margin-right:10px;">
+                info@codebee.store
             </p>
-            <p class="hero-text">
-                Take a look and follow our journey!
-            </p>
-            <p class="hero-text">
-                Please share any feedback or suggestions on how we can improve the website and make it more engaging.
-            </p>
-            <p class="hero-text mt-4" style="color: #383C48">
-                <img src="icons/circle-envelope.png" alt="mailIcon" style="width:25px; height:25px; margin-right:10px; ">info@codebee.store
-            </p>
-            <div class="column features text-center">
-                 <!-- Add list of features here if wanted, maybe with icons?  -->
-            </div>
         </div>
-        
-        <!-- RIGHT CARD -->
-        <div class="col-lg-5 col-md-12">          
-            <img src="images/OldWebsite.png" alt="OldWebsite" class="imgcollage">
+
+        <div class="col-lg-5">
+            <img src="images/OldWebsite.png" class="imgcollage">
+
             <button class="confettiButton p-1" onclick="launchConfetti()">
-                <span>Click here for a surprise</span>
+                Click here for a surprise
             </button>
         </div>
+
     </div>
-</div>
-
-<div class="gradient">
-    <div class="d-flex justify-content-start align-items-center">
-        <p class="connectText">Connect with us:</p>
-        <a href="https://www.instagram.com/codebeeab?igsh=dmw2eGlxa2luZmNn&utm_source=qr"><img src="icons/instagram.png" alt="Instagram" style="width:25px; height:25px; margin-right:20px;"></a>
-        <a href="https://www.linkedin.com/company/codebee-ab/?viewAsMember=true"><img src="icons/linkedin.png" alt="LinkedIn" style="width:25px; height:25px;"></a>
-    </div>
-</div>
-
-<!-- Product Timeline -->
-<div class="mb-5 mt-5">
-    <div class="container hero p-4">
-
-    <!-- Release info -->
-    <div class="row align-items-center justify-content-evenly">
-        <p class="progress-title mb-0">
-            Our first product is in production
-        </p>
-        <p class="progress-text" style="font-size: 1rem;">RELEASE DATE : To be announced</p>
-        <p class="progress-text mt-2" style="font-size: 1.2rem;">
-            Stay tuned - Something exciting is in the works.
-        </p>
-    </div>
-
-
-    <!-- Timeline -->
-    <div class="timeline-wrapper d-none d-lg-block">
-        <div class="timeline">
-
-            <div class="timeline-step completed">
-                <div class="icon"><img src="icons/correct.png" alt="icon"></div>
-                <p class="timeline-Text">START !</p>
-                <p class="timeline-Text" style="font-size: 0.8rem;">25.02.2026</p>
-            </div>
-
-            <div class="timeline-step current">
-                <div class="icon"><img src="icons/contrast.png" alt="icon"></div>
-                <p class="timeline-Text">Planning phase</p>
-                <p class="timeline-Text" style="font-size: 0.8rem;">25.02.2026 - Current </p>
-
-            </div>
-
-            <div class="timeline-step">
-                <div class="icon"><img src="icons/circle.png" alt="icon"></div>
-                <p class="timeline-Text">Development phase</p>
-                <p class="timeline-Text" style="font-size: 0.8rem;"> - </p>
-
-            </div>
-
-            <div class="timeline-step">
-                <div class="icon"><img src="icons/circle.png" alt="icon"></div>
-                <p class="timeline-Text">Testing phase</p>
-                <p class="timeline-Text" style="font-size: 0.8rem;"> - </p>
-
-            </div>
-
-            <div class="timeline-step">
-                <div class="icon"><img src="icons/circle.png" alt="icon"></div>
-                <p class="timeline-Text">Final touches</p>
-                <p class="timeline-Text" style="font-size: 0.8rem;"> - </p>
-
-            </div>
-
-            <div class="timeline-step">
-                <div class="icon"><img src="icons/circle.png" alt="icon"></div>
-                <p class="timeline-Text">DONE !</p>
-                <p class="timeline-Text" style="font-size: 0.8rem;"> - </p>
-
-            </div>
-
-
-        </div>
-    </div>
-    <!-- Mobile Timeline (UL) -->
-    <ul class="timeline-mobile d-lg-none ">
-
-        <li class="completed">
-            <img src="icons/correct.png" class="me-2">
-                <p>START !<br />16.02.2026</p>
-            </li>
-
-        <li class="current">
-            <img src="icons/contrast.png" class="me-2">
-            <p>Planning phase<br />16.02.2026 - Current</p>
-        </li>
-
-        <li>
-            <img src="icons/circle.png" class="me-2">
-            <p>Development phase<br />-</p>
-        </li>
-
-        <li>
-            <img src="icons/circle.png" class="me-2">
-            <p>Testing phase<br />-</p>
-        </li>
-
-        <li>
-            <img src="icons/circle.png" class="me-2">
-            <p>Final touches<br />-</p>
-        </li>
-
-        <li>
-            <img src="icons/circle.png" class="me-2">
-            <p>DONE !<br />-</p>
-        </li>
-
-    </ul>
-</div>
 </div>
 
 <!-- FOOTER -->
-<footer class="border-top box-shadow p-3">
+<footer class="border-top p-3">
 
-    <div class="container footerContent py-3">
+    <div class="container py-3">
         <div class="row">
 
-            <!-- About -->
-            <div class="col-12 col-md-6 col-lg-5 mb-3">
-                <p class="title mb-3">ABOUT US</p>
-                <p class="subtitle mb-1">
-                    CodeBee was founded by a Swedish couple in late 2025.
-                    They first met through their shared passion for gaming,
-                    a hobby they still enjoy together today.
-                </p>
+            <div class="col-md-6">
+                <p class="title">ABOUT US</p>
+                <p>CodeBee was founded by a Swedish couple in 2025.</p>
             </div>
 
-            <!-- Social -->
-            <div class="col-6 col-md-3 col-lg-2 mb-3">
+            <div class="col-md-3">
                 <p class="title">FOLLOW US</p>
-                <a href="https://www.instagram.com/codebeeab" style="text-decoration: none;">
-                    <img src="icons/instagram.png" alt="Instagram" style="width:25px; margin-right:20px;">
+                <a href="https://www.instagram.com/codebeeab">
+                    <img src="icons/instagram.png" width="25">
                 </a>
-                <a href="https://www.linkedin.com/company/codebee-ab" style="text-decoration: none;">
-                    <img src="icons/linkedin.png" alt="LinkedIn" style="width:25px;">
+                <a href="https://www.linkedin.com/company/codebee-ab">
+                    <img src="icons/linkedin.png" width="25">
                 </a>
             </div>
 
-            <!-- Contact -->
-            <div class="col-6 col-md-3 col-lg-3 mb-3">
-                <p class="title">CONTACT US</p>
-                <p style="color: #383C48; font-family: mohave-variablefont_wght;">info@codebee.store</p>
+            <div class="col-md-3">
+                <p class="title">CONTACT</p>
+                <p>info@codebee.store</p>
             </div>
 
         </div>
-    </div>
-
-    <div class="container pb-2">
-        <img src="images/TransparentLogoSmall.png" alt="Bee" style="width:40px;">
-    </div>
-
-    <div class="container d-flex align-items-center pb-3">
-        <img src="icons/copyright.png" alt="Copyright" width="12">
-        <p class="mb-0" style="font-size:0.7rem; margin-left: 5px; font-family: mohave-variablefont_wght;">
-            Codebee AB 2025
-        </p>
     </div>
 
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- ✅ Scripts at bottom (correct order) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="site.js"></script>
+
 <script>
-    function launchConfetti() {
-    const duration = 3 * 1000;
+function launchConfetti() {
+    const duration = 3000;
     const end = Date.now() + duration;
 
     const interval = setInterval(() => {
-        const timeLeft = end - Date.now();
-
-        if (timeLeft <= 0) {
-            clearInterval(interval);
-            return;
-        }
+        if (Date.now() > end) return clearInterval(interval);
 
         confetti({
             particleCount: 40,
             spread: 120,
             startVelocity: 40,
             origin: {
-                x: Math.random(),          // anywhere horizontally
-                y: Math.random() * 0.6     // mostly top half
+                x: Math.random(),
+                y: Math.random() * 0.6
             }
         });
-
     }, 150);
 }
 </script>
+
 </body>
 </html>
