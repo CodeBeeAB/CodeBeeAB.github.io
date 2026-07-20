@@ -60,16 +60,16 @@
 
 
 
-<div class="py-5 w-100 d-flex align-items-center justify-content-center"
-     style="background: url('images/background.png') center/cover no-repeat; min-height: 80vh; height: auto;">
+<div class="hero-background py-5 w-100 d-flex align-items-center justify-content-center"  style="min-height: 80vh;">
 
-    <div class="container hero mb-5 mt-5 p-4" style="background-color: #fafafa; border-radius: 20px; width: 80%; border: solid 2px #ffffff;">
-        <!-- Product Timeline -->
+    <div class="container hero mb-5 mt-5 p-4"
+         style="background-color: #fafafa; border-radius: 20px; width: 80%; border: solid 2px #ffffff; position: relative; z-index: 2;">
+       <!-- Product Timeline -->
         <div>
             
           <!-- Product Timeline -->
-<div class="mb-5 mt-5">
-    <div class="container hero p-4">
+<div class="mb-2 mt-2" style="max-height: auto;">
+    <div class="container hero p-2">
 
     <!-- Release info -->
     <div class="row align-items-center justify-content-evenly">
@@ -89,12 +89,14 @@
             <div class="timeline-step completed">
                 <div class="icon"><img src="icons/correct.png" alt="icon"></div>
                 <p class="timeline-Text">START !</p>
+                <p class="timeline-Text">---</p>
                 <p class="timeline-Text" style="font-size: 0.8rem;">25.02.2026</p>
             </div>
 
-            <div class="timeline-step current">
-                <div class="icon"><img src="icons/button.png" alt="icon"></div>
+            <div class="timeline-step completed">
+                <div class="icon"><img src="icons/correct.png" alt="icon"></div>
                 <p class="timeline-Text">Planning phase</p>
+                <p class="timeline-Text">---</p>
                 <p class="timeline-Text" style="font-size: 0.8rem;">25.02.2026 - 08.04.2026 </p>
 
             </div>
@@ -102,20 +104,23 @@
             <div class="timeline-step current">
                 <div class="icon"><img src="icons/contrast.png" alt="icon"></div>
                 <p class="timeline-Text">Development phase</p>
+                <p class="timeline-Text">---</p>
                 <p class="timeline-Text" style="font-size: 0.8rem;">08.04.2026 - Current</p>
 
             </div>
 
-            <div class="timeline-step">
-                <div class="icon"><img src="icons/circle.png" alt="icon"></div>
+            <div class="timeline-step current">
+                <div class="icon"><img src="icons/contrast.png" alt="icon"></div>
                 <p class="timeline-Text">Testing phase</p>
-                <p class="timeline-Text" style="font-size: 0.8rem;"> - </p>
+                <p class="timeline-Text">(Alpha)</p>
+                <p class="timeline-Text" style="font-size: 0.8rem;">13.07.2026 - Current</p>
 
             </div>
 
             <div class="timeline-step">
                 <div class="icon"><img src="icons/circle.png" alt="icon"></div>
                 <p class="timeline-Text">Final touches</p>
+                <p class="timeline-Text">---</p>
                 <p class="timeline-Text" style="font-size: 0.8rem;"> - </p>
 
             </div>
@@ -123,6 +128,7 @@
             <div class="timeline-step">
                 <div class="icon"><img src="icons/circle.png" alt="icon"></div>
                 <p class="timeline-Text">DONE !</p>
+                <p class="timeline-Text">---</p>
                 <p class="timeline-Text" style="font-size: 0.8rem;"> - </p>
 
             </div>
@@ -138,8 +144,8 @@
                 <p>START !<br />25.02.2026</p>
             </li>
 
-        <li class="current">
-            <img src="icons/button.png" class="me-2">
+        <li class="completed">
+            <img src="icons/correct.png" class="me-2">
             <p>Planning phase<br />25.02.2026 - 08.04.2026</p>
         </li>
 
@@ -148,9 +154,9 @@
             <p>Development phase<br />08.04.2026 - Current</p>
         </li>
 
-        <li>
-            <img src="icons/circle.png" class="me-2">
-            <p>Testing phase<br />-</p>
+        <li class="current">
+            <img src="icons/contrast.png" class="me-2">
+            <p>Testing phase (Alpha)<br />13.07.2026 - Current</p>
         </li>
 
         <li>
@@ -220,6 +226,29 @@
 
 </footer>
 
+<style>
+  .hero-background {
+    position: relative;
+    min-height: 80vh;
+    overflow: hidden;
+}
+
+.hero-background::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("images/background.png") center/cover no-repeat;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.hero-background > * {
+    position: relative;
+    z-index: 1;
+}
+</style>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
